@@ -1,5 +1,33 @@
-GET http://localhost:8081/documents
+GET http://10.12.165.2:3000/documents
 
 ###
 
-GET  http://localhost:3000/documents/12
+GET http://10.12.165.2:3000/documents/643524c8ddaf76f90216ac89
+
+###
+
+POST  http://10.12.165.2:3000/documents/
+Content-Type: application/json
+
+{
+    "title": "Tanomail Services",
+    "content": "Tanomail provides various kinds of services." 
+}
+
+###
+
+PATCH  http://10.12.165.2:3000/documents/643524c8ddaf76f90216ac89
+Content-Type: application/json
+
+{
+    "title": "eValue",
+    "content": "eValue dataset document is updated." 
+}
+
+###
+
+GET  http://10.12.165.2:3000/documents/clearall
+
+###
+
+DELETE  http://10.12.165.2:3000/documents/6435169dddbb8771304a7dff

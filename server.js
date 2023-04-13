@@ -14,4 +14,9 @@ app.use(express.json())
 const documentsRouter = require('./routes/documents')
 app.use('/documents', documentsRouter)
 
-app.listen(3000, () => console.log('Server started'))
+
+app.get('/', (req, res) => {
+    res.send("Hello Network!")
+});
+
+app.listen(3000, '10.12.165.2', () => console.log('Server started'))
